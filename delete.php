@@ -4,7 +4,7 @@ $id = $_GET['id'];
 mysql_query(" DELETE FROM news WHERE id='$id' ");
 mysql_close();
 
-echo "Новость удалина!";
+echo "Новость удалена!";
 
 ?>
 <br />

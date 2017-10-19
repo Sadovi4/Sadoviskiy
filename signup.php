@@ -20,7 +20,7 @@ if(isset ($data['signup']))
     }
     if( strip_tags($data['password_2']) != $data['password'] )
     {
-        $errors[] = 'Пароли не совподают!';
+        $errors[] = 'Пароли не совпадают!';
     }
     $resuit = mysql_query(" SELECT * FROM signup WHERE user_name='$login'");
     if(mysql_num_rows($resuit) != 0)
@@ -33,13 +33,12 @@ if(isset ($data['signup']))
         if(isset($_POST['signup']))
         {
             
-        
+        $Hash = md5($password);
             mysql_query(" 
                             INSERT INTO signup (user_name, password) 
-                            VALUES('$login', '$password')
+                            VALUES('$login', '$Hash')
                         ");
             mysql_close();
-            
             echo "Успешная регистрация!";
            ?> <a href="index.php"> На главную</a> <?php
         }

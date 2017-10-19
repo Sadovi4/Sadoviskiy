@@ -11,7 +11,7 @@ if(isset ($data['login']))
     if(mysql_num_rows($resuit) == 1)
     {
         $row = mysql_fetch_array($resuit);
-        if($password == $row['password']  )
+        if(md5($password) == $row['password']  )
         {
             
             $_SESSION['logged_used'] = $login;

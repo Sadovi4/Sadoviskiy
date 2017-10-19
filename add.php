@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" >
-	<title>Добовление новости</title>
+	<title>Добавление новости</title>
 </head>
 
 <body>
@@ -15,9 +15,6 @@ if(isset($_SESSION['logged_used']) )
     <input type="text" name="title" /><br />
 Текст новости <br />
     <textarea cols="40" rows="10" name="text" ></textarea><br />
-Автор новости <br />
-    <input type="text" name="author" value="<?php echo $_SESSION['logged_used'] ?>"/><br />
-    <input type="hidden" name="data" value="<?php echo date("Y-m-d"); ?>"/>
     <br />
     
     <input type="submit" name="add" value="Добавить"/>
@@ -27,14 +24,14 @@ if(isset($_SESSION['logged_used']) )
 }
 else
 {
-    echo "Авторезуйтесь";
+    echo "Авторизуйтесь";
 }
 if(isset($_POST['add']))
 {
     $title = strip_tags(trim($_POST['title']));
     $text = strip_tags(trim($_POST['text']));
-    $author = strip_tags(trim($_POST['author']));
-    $date = $_POST['date'];
+    $author = $_SESSION['logged_used'];
+    $date = date("Y-m-d");
 
     mysql_query(" 
                     INSERT INTO news(title, text, author, date) 

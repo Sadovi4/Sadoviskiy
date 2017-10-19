@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Окт 18 2017 г., 23:08
+-- Время создания: Окт 19 2017 г., 20:50
 -- Версия сервера: 5.7.17-log
 -- Версия PHP: 5.6.30
 
@@ -37,8 +37,9 @@ CREATE TABLE `signup` (
 --
 
 INSERT INTO `signup` (`user_id`, `user_name`, `password`) VALUES
-(1, 'Садовский Владимир', '123'),
-(2, 'Vladimir', '123');
+(6, 'Пупкин Василий', '202cb962ac59075b964b07152d234b70'),
+(7, 'Vladimir', '202cb962ac59075b964b07152d234b70'),
+(8, 'Садовский Владимир', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Индексы сохранённых таблиц
@@ -58,7 +59,7 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT для таблицы `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

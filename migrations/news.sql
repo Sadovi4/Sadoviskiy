@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost
--- Время создания: Окт 18 2017 г., 23:08
+-- Время создания: Окт 19 2017 г., 20:49
 -- Версия сервера: 5.7.17-log
 -- Версия PHP: 5.6.30
 
@@ -45,7 +45,8 @@ INSERT INTO `news` (`id`, `title`, `image`, `text`, `date`, `author`) VALUES
 (3, 'Откуда он появился?', 'defauit.jpeg', 'Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, \"consectetur\", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги \"de Finibus Bonorum et Malorum\" (\"О пределах добра и зла\"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", происходит от одной из строк в разделе 1.10.32', '2017-10-18', 'Садовский Владимир'),
 (7, 'Где его взять?', 'default.jpg', 'Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или \"невозможных\" слов.', '0000-00-00', 'Садовский Владимир'),
 (10, 'Новость 5', 'default.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel consectetur turpis, malesuada vestibulum urna. Mauris feugiat tristique gravida. Pellentesque volutpat dolor a sollicitudin maximus. In finibus ex mi, eget scelerisque lorem volutpat vel. Pellentesque condimentum nibh non nisl auctor, in faucibus turpis sollicitudin. Curabitur porta odio eget massa mollis, vitae congue lorem faucibus. Cras tincidunt eget elit eu euismod. Nam nec nunc blandit, euismod mauris vel, euismod massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', '0000-00-00', 'Садовский Владимир'),
-(11, 'новость 6', 'default.jpg', 'Etiam congue sapien id consectetur tincidunt. Nunc sit amet ligula posuere, semper nibh id, iaculis sapien. Proin ornare arcu vitae tortor lobortis porta. Suspendisse et interdum turpis. Nam nisi justo, ultricies et sollicitudin non, egestas eu ipsum. Morbi ac pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam gravida ante at semper suscipit. Integer mattis molestie nibh non ultrices. Nulla vel condimentum diam.', '0000-00-00', 'Пупкин Василий');
+(11, 'новость 6', 'default.jpg', 'Etiam congue sapien id consectetur tincidunt. Nunc sit amet ligula posuere, semper nibh id, iaculis sapien. Proin ornare arcu vitae tortor lobortis porta. Suspendisse et interdum turpis. Nam nisi justo, ultricies et sollicitudin non, egestas eu ipsum. Morbi ac pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam gravida ante at semper suscipit. Integer mattis molestie nibh non ultrices. Nulla vel condimentum diam.', '0000-00-00', 'Пупкин Василий'),
+(21, 'Новость 8', 'default.jpg', 'ТЕКСТ текст и еще немного текста', '2017-10-19', 'Vladimir');
 
 --
 -- Индексы сохранённых таблиц
@@ -65,7 +66,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
